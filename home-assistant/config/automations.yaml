@@ -1,0 +1,28 @@
+- id: '1613405972216'
+  alias: Test at 17:21
+  description: ''
+  trigger:
+  - platform: time
+    at: '17:21'
+  condition: []
+  action:
+  - domain: light
+    entity_id: light.living_room_ambiance_ceiling
+    device_id: bf64d004d6a823e8c4d1a0c8a4c49a2a
+    type: turn_on
+    brightness_pct: 5
+  mode: single
+- id: '1613406645273'
+  alias: TestTest
+  description: ''
+  trigger:
+  - platform: time
+    at: '19:00'
+  condition: []
+  action:
+  - service: light.turn_on
+    entity_id: light.living_room_ambiance_ceiling
+    data:
+      transition: '5'
+      brightness: '255'
+  mode: single

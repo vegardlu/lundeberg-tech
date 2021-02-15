@@ -4,7 +4,7 @@ services:
     container_name: homeassistant
     image: homeassistant/home-assistant:stable
     volumes:
-      - /PATH_TO_YOUR_CONFIG:/config
+      - /home/vegard/lundeberg-tech/home-assistant/config:/config
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     network_mode: host
